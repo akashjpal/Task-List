@@ -34,6 +34,6 @@ app.get("/work",function(req,res){
 app.get("/about",function(req,res){
   res.render('about',{listType:"About"});
 })
-app.listen(2000,function(req,res){
-    console.log("Server has Started on port 2000!")
+app.listen(process.env.port || 3000,function(req,res){
+    console.log("Server has Started on port 3000!")
 })
